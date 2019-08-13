@@ -14,6 +14,7 @@
 		0709194322FC523D001F7386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0709194122FC523D001F7386 /* LaunchScreen.storyboard */; };
 		070919522301B20E001F7386 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 070919502301B20E001F7386 /* DataModel.xcdatamodeld */; };
 		0709197523031820001F7386 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709197423031820001F7386 /* CategoryViewController.swift */; };
+		6C1A02F6BBFF98BF38C1DD27 /* Pods_JayTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E46827F60AB278A937B940B /* Pods_JayTodo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		0709194422FC523D001F7386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		070919512301B20E001F7386 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		0709197423031820001F7386 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		4E46827F60AB278A937B940B /* Pods_JayTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JayTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50684271845615E1BB2CE107 /* Pods-JayTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JayTodo.release.xcconfig"; path = "Target Support Files/Pods-JayTodo/Pods-JayTodo.release.xcconfig"; sourceTree = "<group>"; };
+		631A1B2F4330CA99785A7375 /* Pods-JayTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JayTodo.debug.xcconfig"; path = "Target Support Files/Pods-JayTodo/Pods-JayTodo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C1A02F6BBFF98BF38C1DD27 /* Pods_JayTodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				0709193722FC5234001F7386 /* JayTodo */,
 				0709193622FC5234001F7386 /* Products */,
+				9A8BC0E87F8E0D140B900C7B /* Pods */,
+				84153CF0EC8F7816300C2081 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,24 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		84153CF0EC8F7816300C2081 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E46827F60AB278A937B940B /* Pods_JayTodo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A8BC0E87F8E0D140B900C7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				631A1B2F4330CA99785A7375 /* Pods-JayTodo.debug.xcconfig */,
+				50684271845615E1BB2CE107 /* Pods-JayTodo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0709194722FC523D001F7386 /* Build configuration list for PBXNativeTarget "JayTodo" */;
 			buildPhases = (
+				FAD38FDEB024E17B02CB9D2B /* [CP] Check Pods Manifest.lock */,
 				0709193122FC5234001F7386 /* Sources */,
 				0709193222FC5234001F7386 /* Frameworks */,
 				0709193322FC5234001F7386 /* Resources */,
+				3162A89DDE5B3556DEC1E510 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +194,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3162A89DDE5B3556DEC1E510 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JayTodo/Pods-JayTodo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JayTodo/Pods-JayTodo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JayTodo/Pods-JayTodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD38FDEB024E17B02CB9D2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JayTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0709193122FC5234001F7386 /* Sources */ = {
@@ -320,6 +389,7 @@
 		};
 		0709194822FC523D001F7386 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631A1B2F4330CA99785A7375 /* Pods-JayTodo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +408,7 @@
 		};
 		0709194922FC523D001F7386 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50684271845615E1BB2CE107 /* Pods-JayTodo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
