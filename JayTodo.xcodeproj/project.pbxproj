@@ -15,6 +15,7 @@
 		0709197523031820001F7386 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709197423031820001F7386 /* CategoryViewController.swift */; };
 		07091979230351F8001F7386 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07091978230351F8001F7386 /* Item.swift */; };
 		0709197B23035204001F7386 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709197A23035204001F7386 /* Category.swift */; };
+		0709197D23058FC0001F7386 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709197C23058FC0001F7386 /* SwipeTableViewController.swift */; };
 		6C1A02F6BBFF98BF38C1DD27 /* Pods_JayTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E46827F60AB278A937B940B /* Pods_JayTodo.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		0709197423031820001F7386 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		07091978230351F8001F7386 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0709197A23035204001F7386 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		0709197C23058FC0001F7386 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		4E46827F60AB278A937B940B /* Pods_JayTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JayTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50684271845615E1BB2CE107 /* Pods-JayTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JayTodo.release.xcconfig"; path = "Target Support Files/Pods-JayTodo/Pods-JayTodo.release.xcconfig"; sourceTree = "<group>"; };
 		631A1B2F4330CA99785A7375 /* Pods-JayTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JayTodo.debug.xcconfig"; path = "Target Support Files/Pods-JayTodo/Pods-JayTodo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				0709197423031820001F7386 /* CategoryViewController.swift */,
 				0709193A22FC5234001F7386 /* TodoListViewController.swift */,
+				0709197C23058FC0001F7386 /* SwipeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				0709197523031820001F7386 /* CategoryViewController.swift in Sources */,
 				0709193B22FC5234001F7386 /* TodoListViewController.swift in Sources */,
 				0709193922FC5234001F7386 /* AppDelegate.swift in Sources */,
+				0709197D23058FC0001F7386 /* SwipeTableViewController.swift in Sources */,
 				0709197B23035204001F7386 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
