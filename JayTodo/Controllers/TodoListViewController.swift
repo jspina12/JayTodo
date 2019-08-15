@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import ChameleonFramework
 
 class TodoListViewController: SwipeTableViewController {
 
@@ -16,9 +17,7 @@ class TodoListViewController: SwipeTableViewController {
   
   var selectedCategory : Category? {
     didSet {
-      
       loadItems()
-    
     }
   }
   
@@ -26,6 +25,8 @@ class TodoListViewController: SwipeTableViewController {
     super.viewDidLoad()
     
     //print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist"))
+    
+    tableView.separatorStyle = .none
     
   }
 
@@ -44,8 +45,16 @@ class TodoListViewController: SwipeTableViewController {
 
     if let item = todoItems?[indexPath.row] {
       
-    cell.textLabel?.text = todoItems?[indexPath.row].title ?? "No Items Added Yet"
-
+      cell.textLabel?.text = item.title
+      
+      if let color = UIColor(hexString: selectedCategory!.color)?.darken(byPercentage: CGFloat(indexPath.row) / CGFloat(todoItems!.count)) {
+        cell.backgroundColor = color
+        cell.textLabel?.textColor = ContrastColorOf(color, returnFlat: true)
+      }
+      
+//      print("Version 1: \(CGFloat(indexPath.row / todoItems!.count))")
+//      print("Version 2: \(CGFloat(indexPath.row) / CGFloat(todoItems!.count))")
+      
       // Ternary operator
       // value = condition ? valueIfTrue : valueIfFalse
       
@@ -174,4 +183,3 @@ extension TodoListViewController: UISearchBarDelegate {
   }
 
 }
-
